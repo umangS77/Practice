@@ -1,0 +1,10 @@
+Resource / Connection Pool
+
+Base:
+Pool of reusable objects with acquire/release.
+
+Enhancements:
+Max pool size with blocking acquire
+Timeout on acquire
+Idle eviction thread
+Leak detection + usage tracking

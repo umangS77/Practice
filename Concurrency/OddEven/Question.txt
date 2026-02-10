@@ -1,0 +1,9 @@
+Ordered Multithreaded Printing
+
+Base:
+Two threads print odd/even numbers in order.
+
+Enhancements:
+Configurable number of threads
+Pause/resume printing
+Guarantee ordering under contention - we do it via while(condition not satisfied) {await}

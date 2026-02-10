@@ -1,0 +1,10 @@
+Producer–Consumer Processing Pipeline Base:
+Producer generates tasks, consumer processes them using a blocking queue.
+
+Enhancements:
+- Multi-stage pipeline (parse → transform → write)
+- Backpressure when downstream is slow => already handled by blocking queue
+- Graceful shutdown with poison pill / interrupt handling
+- Retry with max retry count + dead letter queue
+
+

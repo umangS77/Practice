@@ -1,0 +1,11 @@
+Multi-Reader Multi-Writer File Simulator
+
+Base:
+Threads read/write shared file object.
+
+Enhancements:
+Chunk-level locking
+Write batching
+Version conflict detection
+Rollback support
+

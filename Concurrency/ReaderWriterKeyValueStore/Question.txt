@@ -1,0 +1,10 @@
+Reader–Writer Key Value Store
+
+Base:
+Thread-safe map with concurrent reads and writes.
+
+Enhancements:
+Multiple readers, single writer (RW lock)
+Writer-priority vs reader-priority modes
+Snapshot reads (versioned data)
+TTL + background cleanup thread
