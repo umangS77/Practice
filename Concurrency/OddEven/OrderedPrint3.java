@@ -33,7 +33,7 @@ public class OrderedPrint3 {
                 while (paused)
                     pauseCond.awaitUninterruptibly();
 
-                while (num <= MAX && (num-1) % maxThreads == id) {
+                while (num <= MAX && (num-1) % maxThreads != id) {
                     condition.awaitUninterruptibly();
                 }
 
